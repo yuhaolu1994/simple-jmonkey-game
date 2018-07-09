@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<nifty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://nifty-gui.lessvoid.com/nifty-gui" xsi:schemaLocation="https://raw.githubusercontent.com/void256/nifty-gui/1.4/nifty-core/src/main/resources/nifty.xsd https://raw.githubusercontent.com/void256/nifty-gui/1.4/nifty-core/src/main/resources/nifty.xsd">
+    <useControls filename="nifty-default-controls.xml"/>
+    <useStyles filename="nifty-default-styles.xml"/>
+    <screen id="select" controller="mygame.HelloNiftySelectController">
+        <layer id="color" childLayout="center">
+            <panel id="panel1" childLayout="center" visibleToMouse="true" width="500px" valign="top" align="right" height="500px">
+                <control name="label" id="" valign="top" text="Select items" align="left"/>
+                <control name="listBox" id="selectionBox" horizontal="optional" width="100%" valign="center" vertical="optional" align="left" forceSelection="true" selectionMode="Multiple" displayItems="10" height="10%"/>            
+                <control name="button" id="doneButton" valign="bottom" label="Done" align="left"/>
+            </panel>
+        </layer>        
+    </screen>
+    <screen id="start">
+        <layer id="baseLayer" childLayout="center"/>
+    </screen>
+</nifty>
